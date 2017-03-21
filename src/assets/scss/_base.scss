@@ -1,0 +1,22 @@
+@keyframes bounce {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+@keyframes animatedBG {
+	
+}
+
+$white: #FFFFFF;
+$lightblue: #00A7E1;
+$darkestblue: #00171F;
+$darkblue: #003459;
+$medblue: #007EA7;

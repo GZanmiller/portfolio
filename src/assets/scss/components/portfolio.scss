@@ -1,0 +1,258 @@
+header {
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0,23,31,0.8);
+	z-index: 999999;
+
+	.logoContainer {
+		@include breakpoint(small only) {
+			text-align: center;
+		}
+
+		#logo {
+			color: $white;
+			font-weight: 800;
+			font-size: rem-calc(32);
+		}
+	}
+
+	.routingContainer {
+		position: relative;
+		height: 50px;
+		text-align: right;
+		
+		.routing {
+			position: absolute;
+			top: 50%;
+			right: 0.9375rem;
+			transform: translateY(-50%);
+
+			a {
+				padding: 0 1rem;
+				border-right: 1px solid #FFF;
+				color: #FFFFFF;
+				font-weight: 800;
+				//text-transform: uppercase;
+				font-size: rem-calc(14);
+			}
+			a:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
+
+.hero {
+	position: relative;
+	//background: url('../img/tempBg.jpg');
+	background-color: $darkblue;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+
+	.heroText {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+
+		img {
+			width: 200px;
+			border: 4px solid $white;
+			border-radius: 4px;
+			margin-bottom: rem-calc(12);
+		}
+
+		h1,h2 {
+			color: #FFFFFF;
+			font-weight: 800;
+			margin: 0;
+			line-height: 1;
+		}
+
+		h1 {
+			font-size: rem-calc(64);
+			margin-bottom: 0.5rem;
+		}
+
+		h2 {
+			font-size: rem-calc(26);
+		}
+	}
+
+	.heroContinue {
+		position: absolute;
+		bottom: rem-calc(16);
+		left: 50%;
+		transform: translateX(-50%);
+		color: #FFFFFF;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.sectionHeader {
+	text-align: center;
+	margin-bottom: rem-calc(32);
+
+	h2 {
+		margin: 0 0 rem-calc(10);
+		font-size: rem-calc(32);
+		font-weight: 800;
+		color: $darkblue;
+		line-height: 1;
+	}
+
+	p {
+		font-size: rem-calc(15);
+	}
+}
+
+.about {
+	padding: rem-calc(64) 0;
+
+	.skills {
+		.skillColumn {
+			text-align: center;
+
+			img {
+				margin-bottom: rem-calc(8);
+			}
+
+			h2 {
+				margin: 0;
+				font-size: rem-calc(26);
+				font-weight: 800;
+			}
+
+			ul {
+				li {
+					list-style: none;
+					font-size: rem-calc(14);
+				}
+			}
+		}
+	}
+}
+
+.work {
+	padding: rem-calc(64) 0;
+	background-color: $lightblue;
+
+	.sectionHeader {
+		h2 {
+			color: $white;
+		}
+		p {
+			color: $white;
+		}
+	}
+
+	.workBox {
+		margin-bottom: rem-calc(16);
+
+		.workSlider {
+			position: relative;
+			overflow: hidden;
+			-webkit-box-shadow: 1px 1px 4px 0px rgba(0,23,31,0.5);
+			-moz-box-shadow: 1px 1px 4px 0px rgba(0,23,31,0.5);
+			box-shadow: 1px 1px 4px 0px rgba(0,23,31,0.5);
+
+			.infoSlide {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				transform: translateY(100%);
+				transition: 250ms ease-in-out;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,23,31,0.9);
+
+				.info {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 75%;
+					text-align: center;
+					color: #FFFFFF;
+
+					h2 {
+						margin: 0;
+						font-weight: 800;
+						font-size: rem-calc(22);
+						line-height: 1;
+						margin-bottom: rem-calc(10);
+					}
+
+					p {
+						margin: 0;
+						line-height: 1;
+						font-size: rem-calc(16);
+						color: $lightblue;
+						font-weight: 800;
+					}
+
+					button {
+						background-color: $lightblue;
+						padding: rem-calc(8) rem-calc(12);
+						margin-top: rem-calc(10);
+						color: $white;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		.workSlider:hover {
+			.infoSlide {
+				transform: translateY(0);
+				transition: 250ms ease-in-out;
+			}
+		}
+	}
+}
+
+.contact {
+	padding: rem-calc(64) 0;
+
+	form {
+		input, textarea {
+			border-radius: 5px;
+		}
+
+		textarea {
+			min-height: 200px;
+		}
+
+		.submit {
+			text-align: right;
+
+			button {
+				background-color: $medblue;
+				color: $white;
+				padding: 0.75rem 1.5rem;
+				border-radius: 5px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: $darkestblue;
+	padding: 1rem;
+	text-align: right;
+
+	p {
+		color: $white;
+		font-size: rem-calc(11);
+		margin: 0;
+	}
+}
