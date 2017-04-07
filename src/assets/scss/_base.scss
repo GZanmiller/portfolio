@@ -10,9 +10,20 @@
 	}
 }
 
-
-@keyframes animatedBG {
-	
+@keyframes hexagon1 {
+	0% {fill: #00A7E1;}
+	50% {fill: #003459;}
+	100% {fill: #00A7E1;}
+}
+@keyframes hexagon2 {
+	0% {fill: #007EA7;}
+	50% {fill: #00A7E1;}
+	100% {fill: #007EA7;}
+}
+@keyframes hexagon3 {
+	0% {fill: #003459;}
+	50% {fill: #007EA7;}
+	100% {fill: #003459;}
 }
 
 $white: #FFFFFF;
