@@ -10,6 +10,14 @@
 	}
 }
 
+@keyframes bounce {
+	0% {transform: translateY(0px);}
+	25% {transform: translateY(1px);}
+	50% {transform: translateY(0px);}
+	75% {transform: translateY(-1px);}
+	100% {transform: translateY(0px);}
+}
+
 @keyframes hexagon1 {
 	0% {fill: #00A7E1;}
 	50% {fill: #003459;}
@@ -24,6 +32,26 @@
 	0% {fill: #003459;}
 	50% {fill: #007EA7;}
 	100% {fill: #003459;}
+}
+
+@keyframes gear1 {
+	0% {transform:rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+@keyframes gear2 {
+	0% {transform:rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@keyframes leftBracket {
+	0% {transform: translateX(0px);}
+	50% {transform: translateX(-10px);}
+	100% {transform:translateX(0px);}
+}
+@keyframes rightBracket {
+	0% {transform: translateX(0px);}
+	50% {transform: translateX(10px);}
+	100% {transform:translateX(0px);}
 }
 
 $white: #FFFFFF;
